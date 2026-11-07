@@ -1,0 +1,302 @@
+/* -------------------------------------------
+HERO SECTION
+--------------------------------------------*/
+.menu-hero-section {
+  height: 40svh;
+  padding: 3rem 5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  color: var(--green);
+  overflow: hidden;
+}
+
+.menu-hero-section h1 {
+  z-index: 10;
+  font-size: clamp(4rem, 8vw, 7rem);
+}
+
+#yellow-blob {
+  position: absolute;
+  width: 70%;
+  height: auto;
+  top: 0%;
+  left: -10%;
+  rotate: 190deg;
+}
+
+#red-blob {
+  position: absolute;
+  rotate: 180deg;
+  top: -20%;
+  height: 130%;
+  left: 0;
+}
+
+/* -------------------------------------------
+MENU SECTION
+--------------------------------------------*/
+.menu-wrapper {
+  margin: 0 auto;
+  padding: 2rem 5rem;
+}
+
+/* ---------------------------------
+FILTER OPTIONS
+----------------------------------*/
+.filter-options {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.filter-options .btn {
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
+}
+
+.filter-options .btn:hover {
+  background-color: var(--green);
+  color: var(--yellow);
+}
+
+/* ---------------------------------
+MENU ITEMS
+----------------------------------*/
+.menu-items {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* ---------------------------
+CATEGORY STYLE
+----------------------------*/
+.category-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.category-heading {
+  width: 30%;
+  border-radius: 20px;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.category-wrapper:nth-of-type(even) .category-heading {
+  order: -1;
+}
+
+.category-heading h2 {
+  font-family: var(--header-font);
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  letter-spacing: 1px;
+}
+
+#starters .category-heading {
+  background-color: var(--green);
+}
+
+#pizza .category-heading {
+  background-color: aliceblue;
+}
+
+#pasta .category-heading {
+  background-color: var(--yellow);
+}
+
+#desserts .category-heading {
+  background-color: var(--brown);
+}
+
+#drinks .category-heading {
+  background-color: var(--red);
+}
+
+.category-items {
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+/*--------------
+MENU ITEM
+--------------*/
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 15px;
+  position: relative;
+}
+
+#pizza .menu-item {
+  border: 3px solid aliceblue;
+}
+
+#starters .menu-item {
+  border: 3px solid var(--green);
+}
+
+#pasta .menu-item {
+  border: 3px solid var(--yellow);
+}
+
+#desserts .menu-item {
+  border: 3px solid var(--brown);
+}
+
+#drinks .menu-item {
+  border: 3px solid var(--red);
+}
+
+.menu-item img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.menu-item h2 {
+  font-size: clamp(1.2rem, 1.5vw, 1.5rem);
+  font-weight: 800;
+  hyphens: auto;
+  height: 30%;
+  margin-top: 1rem;
+}
+
+.menu-item h5 {
+  justify-self: flex-end;
+  align-self: flex-end;
+  font-size: 1.1rem;
+}
+
+.menu-item p {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  margin: 0;
+  font-size: clamp(1rem, 1.3vw, 1.2rem);
+  text-align: center;
+}
+
+#pizza .menu-item:hover {
+  background-color: aliceblue;
+}
+
+#starters .menu-item:hover {
+  background-color: var(--green);
+  color: var(--white);
+}
+
+#pasta .menu-item:hover {
+  background-color: var(--yellow);
+}
+
+#desserts .menu-item:hover {
+  background-color: var(--brown);
+  color: var(--white);
+}
+
+#drinks .menu-item:hover {
+  background-color: var(--red);
+  color: var(--white);
+}
+
+.menu-item:hover img,
+.menu-item:hover h2,
+.menu-item:hover h5 {
+  visibility: hidden;
+}
+
+.menu-item:hover {
+  cursor: pointer;
+}
+
+.menu-item:hover p {
+  display: block;
+}
+
+/*-----------------------------------------------
+MEDIA QUERIES
+------------------------------------------------*/
+@media (max-width: 992px) {
+  .menu-wrapper {
+    padding: 2rem;
+  }
+
+  .category-wrapper {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .category-heading {
+    width: 80%;
+    order: -1;
+    align-self: center;
+  }
+
+  .category-items {
+    align-self: center;
+    width: 80%;
+  }
+
+  #yellow-blob {
+    width: 150%;
+    top: 20%;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-hero-section {
+    padding: 2rem;
+  }
+
+  .filter-options {
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-hero-section {
+    justify-content: center;
+  }
+
+  .menu-wrapper {
+    padding: 2rem 0.7rem;
+  }
+
+  .category-heading {
+    width: 90%;
+  }
+
+  .category-heading h2 {
+    font-size: 1.6rem;
+  }
+
+  .category-items {
+    width: 90%;
+  }
+
+  #yellow-blob {
+    display: none;
+  }
+}

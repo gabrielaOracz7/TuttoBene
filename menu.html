@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutto Bene - Menu</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/menu_style.css" />
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/menu_script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <a href="index.html"
+        ><img class="header-logo" src="images/logo.png" alt="Tutto Bene"
+      /></a>
+      <button class="hamburger"><span></span><span></span><span></span></button>
+      <nav id="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="reservations.html">Rezerwuj stolik</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="menu-hero-section">
+        <img src="images/blobs/yellowblob.svg" id="yellow-blob" alt="" />
+        <img src="images/blobs/waveblob.svg" id="red-blob" alt="" />
+
+        <h1>Menu</h1>
+      </section>
+
+      <div class="menu-wrapper">
+        <section class="filter-options">
+          <button class="btn" id="all" type="button">Wszystko</button>
+          <button class="btn" id="starters_only" type="button">
+            Przystawki
+          </button>
+          <button class="btn" id="pizza_only" type="button">Pizza</button>
+          <button class="btn" id="pasta_only" type="button">Pasta</button>
+          <button class="btn" id="drinks_only" type="button">Napoje</button>
+          <button class="btn" id="desserts_only" type="button">Desery</button>
+          <button class="btn" id="vege_only" type="button">
+            Wegetariańskie
+          </button>
+        </section>
+
+        <section class="menu-items">
+          <section class="category-wrapper" id="starters">
+            <div class="category-items"></div>
+            <div class="category-heading">
+              <h2>Przystawki</h2>
+            </div>
+          </section>
+          <section class="category-wrapper" id="pizza">
+            <div class="category-items"></div>
+            <div class="category-heading">
+              <h2>Pizza</h2>
+            </div>
+          </section>
+          <section class="category-wrapper" id="pasta">
+            <div class="category-items"></div>
+            <div class="category-heading">
+              <h2>Pasta</h2>
+            </div>
+          </section>
+          <section class="category-wrapper" id="desserts">
+            <div class="category-items"></div>
+            <div class="category-heading">
+              <h2>Desery</h2>
+            </div>
+          </section>
+          <section class="category-wrapper" id="drinks">
+            <div class="category-items"></div>
+            <div class="category-heading">
+              <h2>Napoje</h2>
+            </div>
+          </section>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-items">
+          <div class="footer-item">
+            <h3>Tutto Bene</h3>
+            <p>Włoskie smaki, dobre chwile i amore na każdym talerzu.</p>
+          </div>
+          <div class="footer-item">
+            <h3>Odkryj</h3>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="reservations.html">Rezerwuj stolik</a>
+            <a href="contact.html">Kontakt</a>
+          </div>
+          <div class="footer-item">
+            <h3>Znajdź nas</h3>
+            <div class="social-links">
+              <a href="https://www.facebook.com/" target="_blank"
+                ><img src="images/icons/fb.svg" alt="Facebook Tutto Bene"
+              /></a>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><img src="images/icons/ig.svg" alt="Instagram Tutto Bene"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-text">
+          <p>
+            Projekt i wykonanie:
+            <a href="https://github.com/" target="_blank">Imię nazwisko</a>
+          </p>
+          <p>
+            &copy; 2026 <span class="restaurant-name">Tutto Bene</span> ·
+            Wszelkie prawa zastrzeżone
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
