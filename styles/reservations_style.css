@@ -1,0 +1,260 @@
+/* -------------------------------------------
+HERO SECTION
+--------------------------------------------*/
+.reservations-hero-section {
+  min-height: 30svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.reservations-hero-section h1 {
+  font-size: clamp(4rem, 7vw, 6rem);
+  color: var(--green);
+  text-align: center;
+  z-index: 10;
+}
+
+.reservations-hero-section img {
+  position: absolute;
+}
+
+#blob1 {
+  left: -40%;
+  width: 80%;
+  top: -60%;
+}
+
+#blob2 {
+  right: -35%;
+  width: 80%;
+  top: -60%;
+  rotate: 190deg;
+}
+
+/* -------------------------------------------
+RESERVATION SECTION
+--------------------------------------------*/
+.reservation-section {
+  z-index: 10;
+  position: relative;
+  display: flex;
+  min-height: 30svh;
+  padding: 2rem 3rem;
+  width: 80%;
+  align-items: stretch;
+  margin: 0 auto;
+  justify-content: space-between;
+  background-color: var(--green);
+  border-radius: 15px;
+}
+
+/*----------------------
+VIDEO SECTION
+-----------------------*/
+.reservation-visual {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reservation-visual video {
+  width: 100%;
+  aspect-ratio: 3/5;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 15px;
+}
+
+/*----------------------
+FORM
+-----------------------*/
+.reservation-form-wrapper {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.form-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+
+.form-heading h2 {
+  font-family: var(--header-font);
+  font-size: clamp(2rem, 3vw, 2.8rem);
+  color: var(--yellow);
+}
+
+.form-heading p {
+  font-size: clamp(1rem, 1.3vw, 1.2rem);
+  color: var(--yellow);
+  opacity: 0.75;
+}
+
+.form {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 2rem;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 1.5rem;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.form-item:first-child {
+  align-items: flex-start;
+}
+
+.form-item:last-child {
+  align-items: flex-end;
+}
+
+.form-item input {
+  width: 100%;
+  font-size: clamp(1rem, 1.2vw, 1.1rem);
+}
+
+.form-item label {
+  font-size: clamp(0.9rem, 1.1vw, 1rem);
+  align-self: flex-start;
+  color: var(--yellow);
+  opacity: 0.7;
+  font-weight: 800;
+  margin-bottom: 0.3rem;
+}
+
+textarea,
+input {
+  padding: 0.5rem 0.7rem;
+  border: 3px solid var(--yellow);
+  border-radius: 10px;
+  font-family: inherit;
+}
+
+textarea {
+  width: 100%;
+}
+
+form .btn {
+  font-size: clamp(1.2rem, 1.5vw, 1.5rem);
+}
+
+form .btn:hover {
+  background-color: var(--red);
+  color: var(--yellow);
+}
+
+main {
+  overflow: hidden;
+}
+
+/*-----------------------------------------------
+MEDIA QUERIES
+------------------------------------------------*/
+@media (max-width: 992px) {
+  #blob1 {
+    width: 100%;
+  }
+
+  #blob2 {
+    width: 100%;
+  }
+
+  .reservation-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .reservation-visual {
+    width: 90%;
+  }
+
+  .reservation-visual video {
+    aspect-ratio: 3/1;
+  }
+
+  .reservation-form-wrapper {
+    width: 90%;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #blob1 {
+    width: 120%;
+    left: -60%;
+    top: -30%;
+  }
+
+  #blob2 {
+    width: 120%;
+    right: -50%;
+    top: -40%;
+  }
+
+  .reservation-section {
+    padding: 2rem;
+    width: 90%;
+  }
+
+  fieldset {
+    gap: 1rem;
+  }
+
+  fieldset:nth-of-type(3) {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .reservations-hero-section h1 {
+    font-size: clamp(2.5rem, 4vw, 5rem);
+  }
+
+  #blob1 {
+    width: 200%;
+    left: -100%;
+    top: 0%;
+  }
+
+  #blob2 {
+    width: 160%;
+    right: -80%;
+    top: -30%;
+  }
+
+  .reservation-section {
+    padding: 2rem 1rem;
+    width: 90%;
+  }
+  fieldset {
+    flex-direction: column;
+  }
+
+  .reservation-visual video {
+    aspect-ratio: 3/2;
+  }
+}

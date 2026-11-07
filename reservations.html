@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutto Bene - Rezerwacje</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/reservations_style.css" />
+    <script src="scripts/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <a href="index.html"
+        ><img class="header-logo" src="images/logo.png" alt="Tutto Bene"
+      /></a>
+      <button class="hamburger"><span></span><span></span><span></span></button>
+      <nav id="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="reservations.html">Rezerwuj stolik</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="reservations-hero-section">
+        <img src="images/blobs/redblob.svg" id="blob2" />
+        <img src="images/blobs/yellowblob.svg" id="blob1" />
+        <h1>Zarezerwuj stolik</h1>
+      </section>
+
+      <section class="reservation-section">
+        <div class="reservation-visual">
+          <video src="videos/video.mp4" autoplay muted loop playsinline></video>
+        </div>
+        <div class="reservation-form-wrapper"">
+          <div class="form-heading">
+            <h2>Mamma mia, ale będzie uczta!</h2>
+            <p>
+              Wybierz termin, zbierz swoich ludzi i wpadaj na coś pysznego.
+              Resztą zajmiemy się my!
+            </p>
+          </div>
+          <form action="reservations.html" method="post" class="form">
+            <fieldset>
+              <div class="form-item">
+                <label for="first_name">Imię</label>
+                <input
+                  type="text"
+                  id="first_name"
+                  name="first_name"
+                  required
+                  minlength="2"
+                  maxlength="30"
+                  placeholder="Jan"
+                />
+              </div>
+              <div class="form-item">
+                <label for="last_name">Nazwisko</label>
+                <input
+                  type="text"
+                  id="last_name"
+                  name="last_name"
+                  required
+                  minlength="2"
+                  maxlength="50"
+                  placeholder="Kowalski"
+                />
+              </div>
+            </fieldset>
+            <fieldset>
+              <div class="form-item">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="jankowalski@poczta.pl"
+                />
+              </div>
+              <div class="form-item">
+                <label for="phone">Numer telefonu</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  required
+                  minlength="9"
+                  pattern="^[0-9]{9}$"
+                  placeholder="608123567"
+                />
+              </div>
+            </fieldset>
+            <fieldset>
+              <div class="form-item">
+                <label for="guests">Liczba osób</label>
+                <input
+                  type="number"
+                  id="guests"
+                  name="guests"
+                  required
+                  step="1"
+                  min="1"
+                  max="100"
+                  placeholder="2"
+                />
+              </div>
+              <div class="form-item">
+                <label for="date">Data</label>
+                <input type="date" id="date" name="date" required />
+              </div>
+              <div class="form-item">
+                <label for="hour">Godzina</label>
+                <input
+                  type="time"
+                  id="hour"
+                  name="hour"
+                  required
+                  step="1800"
+                  min="15:00"
+                  max="19:00"
+                
+                />
+              </div>
+            </fieldset>
+            <fieldset>
+              <div class="form-item">
+                <label for="info">Uwagi do rezerwacji (opcjonalne)</label>
+                <textarea 
+                  id="info" 
+                  name="info" 
+                  rows="5"   
+                  placeholder="Np. stolik przy oknie, miejsce dla wózka dziecięcego..."
+                ></textarea>
+              </div>
+            </fieldset>
+            <button type="submit" class="btn">Zarezerwuj</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-items">
+          <div class="footer-item">
+            <h3>Tutto Bene</h3>
+            <p>Włoskie smaki, dobre chwile i amore na każdym talerzu.</p>
+          </div>
+          <div class="footer-item">
+            <h3>Odkryj</h3>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="reservations.html">Rezerwuj stolik</a>
+            <a href="contact.html">Kontakt</a>
+          </div>
+          <div class="footer-item">
+            <h3>Znajdź nas</h3>
+            <div class="social-links">
+              <a href="https://www.facebook.com/" target="_blank"
+                ><img src="images/icons/fb.svg" alt="Facebook Tutto Bene"
+              /></a>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><img src="images/icons/ig.svg" alt="Instagram Tutto Bene"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-text">
+          <p>
+            Projekt i wykonanie:
+            <a href="https://github.com/" target="_blank">Imię nazwisko</a>
+          </p>
+          <p>
+            &copy; 2026 <span class="restaurant-name">Tutto Bene</span> ·
+            Wszelkie prawa zastrzeżone
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
