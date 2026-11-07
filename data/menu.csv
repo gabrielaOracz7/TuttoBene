@@ -1,0 +1,32 @@
+nazwa;kategoria;cena;skladniki;nazwa_pliku_ze_zdjeciem;czy_wegetarianskie
+Spaghetti Carbonara;pasta;36;spaghetti,guanciale,pecorino,jajka;carbonara.png;false
+Tagliatelle Bolognese;pasta;38;tagliatelle,wołowina,sos pomidorowy,parmezan;bolognese.png;false
+Penne al Pesto;pasta;34;penne,pesto bazyliowe,parmezan,orzeszki piniowe;pesto.png;true
+Ravioli Ricotta e Spinaci;pasta;39;ravioli,ricotta,szpinak,masło,szałwia;ravioli.png;true
+Tagliatelle ai Funghi;pasta;37;tagliatelle,grzyby,śmietanka,czosnek,parmezan;funghi.png;true
+Spaghetti Aglio e Olio;pasta;31;spaghetti,czosnek,oliwa,peperoncino;aglio-olio.png;true
+Pizza Margherita;pizza;29;sos pomidorowy,mozzarella,bazylia;margherita.png;true
+Pizza Diavola;pizza;36;sos pomidorowy,mozzarella,pikantne salami,peperoncino;diavola.png;false
+Pizza Quattro Formaggi;pizza;38;mozzarella,gorgonzola,parmezan,provolone;quattro-formaggi.png;true
+Pizza Prosciutto e Rucola;pizza;39;sos pomidorowy,mozzarella,prosciutto crudo,rukola,parmezan;prosciutto-rucola.png;false
+Pizza Capricciosa;pizza;37;sos pomidorowy,mozzarella,szynka,pieczarki,karczochy;capricciosa.png;false
+Pizza Verdure;pizza;35;sos pomidorowy,mozzarella,cukinia,papryka,czerwona cebula;verdure.png;true
+Bruschetta al Pomodoro;starters;19;pieczywo,pomidory,czosnek,bazylia;bruschetta.png;true
+Focaccia al Rosmarino;starters;16;ciasto,oliwa,rozmaryn,sól morska;focaccia.png;true
+Caprese;starters;25;pomidory,mozzarella,bazylia,oliwa;caprese.png;true
+Arancini;starters;24;ryż,mozzarella,sos pomidorowy;arancini.png;true
+Insalata Burrata;starters;29;burrata,pomidorki koktajlowe,rukola,pesto;burrata.png;true
+Tiramisu;desserts;22;mascarpone,biszkopty,espresso,kakao;tiramisu.png;true
+Panna Cotta;desserts;19;śmietanka,wanilia,maliny;panna-cotta.png;true
+Cannoli Siciliani;desserts;21;ricotta,ciasto,pistacje;cannoli.png;true
+Tortino al Cioccolato;desserts;23;czekolada,masło,jajka,mąka;tortino.png;true
+Limonata;drinks;14;cytryny,woda gazowana,mięta;limonata.png;true
+Aranciata;drinks;14;pomarańcze,woda gazowana,lód;aranciata.png;true
+Iced Latte;drinks;16;;iced-latte.png;true
+Espresso;drinks;9;;espresso.png;true
+Cappuccino;drinks;13;; cappuccino.png;true
+Acqua Frizzante;drinks;9;;acqua-frizzante.png;true
+Wino Czerwone;drinks;22;wino czerwone;wino-czerwone.png;true
+Wino Białe;drinks;22;wino białe;wino-biale.png;true
+Lasagne alla Bolognese;pasta;42;płaty lasagne,wołowina,sos pomidorowy,béchamel,parmezan;lasagne-bolognese.png;false
+Affogato;desserts;16;lody waniliowe,espresso;affogato.png;true
