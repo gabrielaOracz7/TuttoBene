@@ -82,6 +82,10 @@ CATEGORY STYLE
   justify-content: space-between;
 }
 
+.category-wrapper.hidden {
+  display: none;
+}
+
 .category-heading {
   width: 30%;
   border-radius: 20px;
@@ -176,13 +180,12 @@ MENU ITEM
   margin-top: 1rem;
 }
 
-.menu-item h5 {
-  justify-self: flex-end;
+.item-price {
   align-self: flex-end;
   font-size: 1.1rem;
 }
 
-.menu-item p {
+.item-ingredients {
   display: none;
   position: absolute;
   top: 50%;
@@ -194,46 +197,81 @@ MENU ITEM
   text-align: center;
 }
 
-#pizza .menu-item:hover {
+#pizza .menu-item.show-ingredients {
   background-color: aliceblue;
 }
 
-#starters .menu-item:hover {
+#starters .menu-item.show-ingredients {
   background-color: var(--green);
   color: var(--white);
 }
 
-#pasta .menu-item:hover {
+#pasta .menu-item.show-ingredients {
   background-color: var(--yellow);
 }
 
-#desserts .menu-item:hover {
+#desserts .menu-item.show-ingredients {
   background-color: var(--brown);
   color: var(--white);
 }
 
-#drinks .menu-item:hover {
+#drinks .menu-item.show-ingredients {
   background-color: var(--red);
   color: var(--white);
 }
 
-.menu-item:hover img,
-.menu-item:hover h2,
-.menu-item:hover h5 {
+.menu-item.show-ingredients img,
+.menu-item.show-ingredients h2,
+.menu-item.show-ingredients .item-price {
   visibility: hidden;
 }
 
-.menu-item:hover {
-  cursor: pointer;
-}
-
-.menu-item:hover p {
+.menu-item.show-ingredients .item-ingredients {
   display: block;
 }
 
 /*-----------------------------------------------
 MEDIA QUERIES
 ------------------------------------------------*/
+@media (hover: hover) and (pointer: fine) {
+  #pizza .menu-item:hover {
+    background-color: aliceblue;
+  }
+
+  #starters .menu-item:hover {
+    background-color: var(--green);
+    color: var(--white);
+  }
+
+  #pasta .menu-item:hover {
+    background-color: var(--yellow);
+  }
+
+  #desserts .menu-item:hover {
+    background-color: var(--brown);
+    color: var(--white);
+  }
+
+  #drinks .menu-item:hover {
+    background-color: var(--red);
+    color: var(--white);
+  }
+
+  .menu-item:hover img,
+  .menu-item:hover h2,
+  .menu-item:hover p.item-price {
+    visibility: hidden;
+  }
+
+  .menu-item:hover {
+    cursor: pointer;
+  }
+
+  .menu-item:hover p.item-ingredients {
+    display: block;
+  }
+}
+
 @media (max-width: 992px) {
   .menu-wrapper {
     padding: 2rem;
