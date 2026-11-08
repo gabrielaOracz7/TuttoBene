@@ -190,6 +190,11 @@ CONTACT INFO CARDS
   color: black;
 }
 
+.opening-hours p:last-child {
+  font-size: clamp(0.8rem, 1.1vw, 1.1rem);
+  opacity: 0.65;
+}
+
 .contact-card.contact-address {
   border: 6px solid var(--yellow);
 }

@@ -395,7 +395,7 @@ LOCATION SECTION
   align-items: flex-start;
   width: 100%;
   text-align: center;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 .location-item img {
@@ -406,13 +406,29 @@ LOCATION SECTION
 
 .location-item p,
 .location-item a {
-  font-size: clamp(1.2rem, 1.5vw, 1.6rem);
+  font-size: clamp(1.1rem, 1.4vw, 1.6rem);
+  font-style: normal;
 }
 
 .location-item a {
   text-decoration: none;
   display: block;
   color: black;
+}
+
+.opening-hours {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.opening-hours p:first-child {
+  font-size: clamp(1.1rem, 1.4vw, 1.6rem);
+  opacity: 1;
+}
+
+.opening-hours p:last-child {
+  font-size: clamp(0.9rem, 1.3vw, 1.2rem);
+  opacity: 0.65;
 }
 
 /*-----------------------------------------
