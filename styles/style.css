@@ -43,7 +43,7 @@ main {
 HEADER
 --------------------------*/
 header {
-  padding: 1rem 2rem;
+  padding: 1rem 3rem 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -64,7 +64,7 @@ NAV
 -------------*/
 
 nav {
-  width: 50%;
+  width: 45%;
 }
 
 nav ul {
