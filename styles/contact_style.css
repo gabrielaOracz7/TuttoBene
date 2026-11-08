@@ -1,0 +1,324 @@
+/* -------------------------------------------
+HERO SECTION
+--------------------------------------------*/
+.contact-hero-section {
+  height: 30svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.contact-hero-section h1 {
+  font-size: clamp(4rem, 7vw, 6rem);
+  color: var(--red);
+  z-index: 10;
+  text-align: center;
+}
+
+.contact-hero-section img {
+  position: absolute;
+}
+
+#blob1 {
+  right: -30%;
+  top: -100%;
+  width: 90%;
+  rotate: -20deg;
+}
+
+#blob2 {
+  width: 75%;
+  left: -30%;
+  top: 0%;
+  rotate: 130deg;
+}
+
+main {
+  overflow: hidden;
+}
+/* -------------------------------------------
+CONTACT SECTION
+--------------------------------------------*/
+.contact-content {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3rem;
+}
+
+.contact-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+}
+
+/*---------------------------
+FORM
+---------------------------*/
+.contact-form-section {
+  width: 60%;
+  background-color: var(--red);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 15px;
+  z-index: 10;
+}
+
+.form-heading {
+  text-align: center;
+  color: var(--yellow);
+}
+.form-heading h2 {
+  font-size: clamp(2rem, 3vw, 2.8rem);
+  font-family: var(--header-font);
+}
+
+.form-heading p {
+  font-size: clamp(1rem, 1.3vw, 1.2rem);
+  opacity: 0.75;
+}
+
+.contact-form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 85%;
+  gap: 1rem;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.contact-form label {
+  font-size: clamp(0.9rem, 1.1vw, 1rem);
+  color: var(--yellow);
+  font-weight: 800;
+  opacity: 0.6;
+  margin-bottom: 0.3rem;
+  align-self: flex-start;
+}
+
+.contact-form input {
+  width: 100%;
+  font-size: clamp(1rem, 1.2vw, 1.1rem);
+}
+
+.contact-form textarea {
+  width: 100%;
+}
+
+select,
+textarea,
+input {
+  padding: 0.5rem 0.7rem;
+  border: 3px solid var(--yellow);
+  border-radius: 10px;
+  font-family: inherit;
+}
+
+select {
+  font-size: clamp(1rem, 1.2vw, 1.1rem);
+  width: 100%;
+  cursor: pointer;
+}
+
+.contact-form .btn {
+  background-color: var(--yellow);
+  width: 100%;
+  margin-bottom: 1rem;
+  color: var(--red);
+  border: 2px solid var(--red);
+}
+
+.contact-form .btn:hover {
+  background-color: var(--red);
+  border: 2px solid var(--yellow);
+  color: var(--yellow);
+}
+
+/*---------------------------
+CONTACT INFO CARDS
+---------------------------*/
+.contact-info {
+  z-index: 10;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.contact-card {
+  padding: 1rem;
+  background-color: var(--white);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  gap: 1rem;
+}
+
+.contact-card h3 {
+  font-size: clamp(1.5rem, 2vw, 2.2rem);
+  font-family: var(--header-font);
+}
+
+.contact-card a,
+.contact-card p {
+  font-size: clamp(1rem, 1.2vw, 1.1rem);
+}
+
+.contact-card a {
+  text-decoration: none;
+  color: black;
+}
+
+.contact-card.contact-address {
+  border: 6px solid var(--yellow);
+}
+
+.contact-card.contact-phone {
+  border: 6px solid var(--red);
+}
+
+.contact-card.contact-email {
+  border: 6px solid var(--green);
+}
+
+.contact-card address {
+  font-style: normal;
+  font-size: clamp(1rem, 1.2vw, 1.1rem);
+}
+
+/*-------------------------------
+CONTACT LOCATION INFO
+--------------------------------*/
+.contact-location {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.contact-card.visit-us {
+  width: 25%;
+  color: var(--red);
+  justify-content: center;
+}
+
+.contact-card.visit-us h3 {
+  font-family: var(--header-font);
+  font-size: clamp(2.5rem, 3vw, 3rem);
+  align-self: flex-start;
+}
+
+.contact-card.visit-us p {
+  font-size: clamp(1rem, 1.4vw, 2rem);
+  opacity: 0.85;
+  align-self: flex-end;
+  color: var(--brown);
+  font-style: italic;
+}
+
+.location-map {
+  width: 70%;
+}
+
+.location-map iframe {
+  display: block;
+  aspect-ratio: 7/2;
+  width: 100%;
+  border-radius: 15px;
+}
+
+/*-----------------------------------------------
+MEDIA QUERIES
+------------------------------------------------*/
+@media (max-width: 992px) {
+  .contact-location {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .contact-card.visit-us {
+    width: 50%;
+    order: 5;
+    align-self: center;
+  }
+
+  .location-map {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form-section {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .contact-info {
+    width: 100%;
+  }
+
+  #blob1 {
+    right: -50%;
+    width: 130%;
+  }
+
+  #blob2 {
+    width: 120%;
+    left: -50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-hero-section h1 {
+    font-size: clamp(2.8rem, 3.5vw, 4rem);
+  }
+
+  .contact-form-section {
+    padding: 1rem;
+  }
+
+  .contact-card.visit-us {
+    width: 100%;
+    align-self: center;
+  }
+
+  .location-map iframe {
+    aspect-ratio: 5/3;
+  }
+
+  #blob1 {
+    right: -70%;
+    top: -50%;
+    width: 160%;
+  }
+
+  #blob2 {
+    width: 170%;
+    left: -80%;
+  }
+}

@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutto Bene - Kontakt</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/contact_style.css" />
+    <script src="scripts/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <a href="index.html"
+        ><img class="header-logo" src="images/logo.png" alt="Tutto Bene"
+      /></a>
+      <button class="hamburger"><span></span><span></span><span></span></button>
+      <nav id="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="reservations.html">Rezerwuj stolik</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="contact-hero-section">
+        <img src="images/blobs/greenblob.svg" id="blob1" />
+        <img src="images/blobs/yellowblob.svg" id="blob2" />
+        <h1>Masz pytania?</h1>
+      </section>
+
+      <div class="contact-content">
+        <div class="contact-main">
+          <section class="contact-form-section">
+            <div class="form-heading">
+              <h2>Parla con noi!</h2>
+              <p>
+                Masz pytanie, pomysł lub sugestię? Napisz do nas! Z
+                przyjemnością Ci odpowiemy.
+              </p>
+            </div>
+            <form action="contact.html" method="post" class="contact-form">
+              <div class="form-item">
+                <label for="name">Imię</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  minlength="2"
+                  placeholder="Adam"
+                />
+              </div>
+
+              <div class="form-item">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="adam123@poczta.pl"
+                />
+              </div>
+
+              <div class="form-item">
+                <label for="subject">Temat</label>
+                <select name="subject" id="subject">
+                  <option value="pytanie_menu">Pytanie dotyczące menu</option>
+                  <option value="wspolpraca_biznesowa">
+                    Współpraca biznesowa
+                  </option>
+                  <option value="opinie_sugestie">Opinie i sugestie</option>
+                  <option value="organizacja_wydarzenia">
+                    Organizacja wydarzenia
+                  </option>
+                  <option value="inne">Inne</option>
+                </select>
+              </div>
+
+              <div class="form-item">
+                <label for="msg">Treść</label>
+                <textarea
+                  id="msg"
+                  name="msg"
+                  rows="5"
+                  required
+                  placeholder="Napisz tutaj swoją wiadomość..."
+                ></textarea>
+              </div>
+              <button type="submit" class="btn">Wyślij</button>
+            </form>
+          </section>
+
+          <section class="contact-info">
+            <div class="contact-card contact-address">
+              <h3>Gdzie jesteśmy?</h3>
+              <address>
+                ul. Włoska 123<br />
+                30-001 Kraków
+              </address>
+              <p>
+                Pon. - Pt. 12:00–22:00<br />
+                Sb. - Nd. 13:00–23:00
+              </p>
+            </div>
+
+            <div class="contact-card contact-phone">
+              <h3>Zadzwoń do nas!</h3>
+              <a href="tel:+48123456789">123-456-789</a>
+            </div>
+
+            <div class="contact-card contact-email">
+              <h3>Napisz do nas!</h3>
+              <a href="mailto:tuttobene@poczta.pl"> tuttobene@poczta.pl </a>
+            </div>
+          </section>
+        </div>
+
+        <section class="contact-location">
+          <div class="contact-card visit-us">
+            <h3>Ci vediamo!</h3>
+            <p>...czyli do zobaczenia!</p>
+          </div>
+          <div class="location-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6082812.053182162!2d2.736371524999998!3d41.890210200000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61b6532013ad%3A0x28f1c82e908503c4!2sKoloseum!5e0!3m2!1spl!2spl!4v1793017426009!5m2!1spl!2spl"
+              style="border: 0"
+              title="Lokalizacja restauracji Tutto Bene na mapie"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+            ></iframe>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-items">
+          <div class="footer-item">
+            <h3>Tutto Bene</h3>
+            <p>Włoskie smaki, dobre chwile i amore na każdym talerzu.</p>
+          </div>
+          <div class="footer-item">
+            <h3>Odkryj</h3>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="reservations.html">Rezerwuj stolik</a>
+            <a href="contact.html">Kontakt</a>
+          </div>
+          <div class="footer-item">
+            <h3>Znajdź nas</h3>
+            <div class="social-links">
+              <a href="https://www.facebook.com/" target="_blank"
+                ><img src="images/icons/fb.svg" alt="Facebook Tutto Bene"
+              /></a>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><img src="images/icons/ig.svg" alt="Instagram Tutto Bene"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-text">
+          <p>
+            Projekt i wykonanie:
+            <a href="https://github.com/" target="_blank">Imię nazwisko</a>
+          </p>
+          <p>
+            &copy; 2026 <span class="restaurant-name">Tutto Bene</span> ·
+            Wszelkie prawa zastrzeżone
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
