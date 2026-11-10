@@ -21,8 +21,8 @@ const offerHeading = document.querySelector(".offer-heading h2");
 
 if (offerHeading) {
   const observer = new IntersectionObserver(
-    (entires) => {
-      entires.forEach((entry) => {
+    (entries) => {
+      entries.forEach((entry) => {
         if (entry.isIntersecting) {
           offerHeading.classList.add("show");
         } else {

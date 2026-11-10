@@ -14,11 +14,11 @@ const successMessage = document.querySelector(".success-message");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  const isnameValid = validateFirstName(name);
+  const isNameValid = validateFirstName(name);
   const isEmailValid = validateEmail(email);
   const isMessageValid = validateMessage(message);
 
-  const isFormValid = isnameValid && isEmailValid && isMessageValid;
+  const isFormValid = isNameValid && isEmailValid && isMessageValid;
 
   if (!isFormValid) {
     form.reportValidity();

@@ -28,6 +28,7 @@ export function validateFirstName(input) {
     showError(input, "Imię może zawierać tylko litery");
     return false;
   }
+
   clearError(input);
   return true;
 }
@@ -37,7 +38,7 @@ export function validateLastName(input) {
   const namePattern = /^[\p{L}-]+$/u;
 
   if (value.length < 2) {
-    showError(input, "Naziwsko musi posiadać co najmniej 2 znaki");
+    showError(input, "Nazwisko musi posiadać co najmniej 2 znaki");
     return false;
   }
   if (value.length > 50) {
@@ -48,6 +49,7 @@ export function validateLastName(input) {
     showError(input, "Nazwisko może zawierać tylko litery i znak -");
     return false;
   }
+
   clearError(input);
   return true;
 }
@@ -59,6 +61,7 @@ export function validatePhone(input) {
     showError(input, "Numer telefonu musi zawierać 9 cyfr");
     return false;
   }
+
   clearError(input);
   return true;
 }
@@ -71,6 +74,7 @@ export function validateEmail(input) {
     showError(input, "Wprowadź poprawny adres email");
     return false;
   }
+
   clearError(input);
   return true;
 }
@@ -81,6 +85,7 @@ export function validateGuests(input) {
     showError(input, "Liczba osób musi być z zakresu 1-50");
     return false;
   }
+
   clearError(input);
   return true;
 }
@@ -88,9 +93,10 @@ export function validateGuests(input) {
 export function validateHour(input) {
   const value = input.value;
   if (value < "15:00" || value > "19:00") {
-    showError(input, "Rezerwacje mozliwe między 15:00 a 19:00");
+    showError(input, "Rezerwacje możliwe między 15:00 a 19:00");
     return false;
   }
+
   const minutes = value.split(":")[1];
   if (minutes !== "00" && minutes !== "30") {
     showError(input, "Rezerwacje możliwe tylko co pół godziny");
@@ -114,11 +120,11 @@ export function validateDate(input) {
     showError(input, "Wybierz datę rezerwacji");
     return false;
   }
-
   if (selectedDate <= todayString) {
-    showError(input, "Wymagadne co najmniej jednodniowe wyprzedzenie.");
+    showError(input, "Wymagane co najmniej jednodniowe wyprzedzenie");
     return false;
   }
+
   clearError(input);
   return true;
 }
@@ -130,13 +136,12 @@ export function validateMessage(input) {
     showError(input, "Wpisz treść wiadomości");
     return false;
   }
-
   if (value.length < 10) {
-    showError(input, "Wiadomość powinna mieć minimum 10 znaków.");
+    showError(input, "Wiadomość powinna mieć minimum 10 znaków");
     return false;
   }
   if (value.length > 500) {
-    showError(input, "Wiadomość może mieć makrymalnie 500 znaków.");
+    showError(input, "Wiadomość może mieć maksymalnie 500 znaków");
     return false;
   }
 
