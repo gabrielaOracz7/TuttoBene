@@ -14,7 +14,9 @@
       <a href="index.html"
         ><img class="header-logo" src="images/logo.png" alt="Tutto Bene"
       /></a>
-      <button class="hamburger"><span></span><span></span><span></span></button>
+      <button class="hamburger" type="button">
+        <span></span><span></span><span></span>
+      </button>
       <nav id="main-nav">
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -27,8 +29,8 @@
 
     <main>
       <section class="contact-hero-section">
-        <img src="images/blobs/greenblob.svg" id="blob1" />
-        <img src="images/blobs/yellowblob.svg" id="blob2" />
+        <img src="images/blobs/greenblob.svg" id="blob1" alt="" />
+        <img src="images/blobs/yellowblob.svg" id="blob2" alt="" />
         <h1>Masz pytania?</h1>
       </section>
 
@@ -52,6 +54,7 @@
                     name="name"
                     required
                     minlength="2"
+                    maxlength="30"
                     placeholder="Adam"
                   />
                   <span class="error-message"></span>
@@ -119,16 +122,16 @@
               </address>
               <div class="opening-hours">
                 <p>
-                  <time>12:00</time> –
-                  <time>22:00</time>
+                  <time datetime="12:00">12:00</time> –
+                  <time datetime="22:00">22:00</time>
                 </p>
                 <p>Pon. – Pt.</p>
               </div>
 
               <div class="opening-hours">
                 <p>
-                  <time>13:00</time> –
-                  <time>23:00</time>
+                  <time datetime="13:00">13:00</time> –
+                  <time datetime="23:00">23:00</time>
                 </p>
                 <p>Sb. – Nd.</p>
               </div>
@@ -182,10 +185,16 @@
           <div class="footer-item">
             <h3>Znajdź nas</h3>
             <div class="social-links">
-              <a href="https://www.facebook.com/" target="_blank"
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
                 ><img src="images/icons/fb.svg" alt="Facebook Tutto Bene"
               /></a>
-              <a href="https://www.instagram.com/" target="_blank"
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
                 ><img src="images/icons/ig.svg" alt="Instagram Tutto Bene"
               /></a>
             </div>
@@ -194,7 +203,12 @@
         <div class="footer-text">
           <p>
             Projekt i wykonanie:
-            <a href="https://github.com/" target="_blank">Imię nazwisko</a>
+            <a
+              href="https://github.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Imię nazwisko</a
+            >
           </p>
           <p>
             &copy; 2026 <span class="restaurant-name">Tutto Bene</span> ·
