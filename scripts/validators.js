@@ -122,3 +122,24 @@ export function validateDate(input) {
   clearError(input);
   return true;
 }
+
+export function validateMessage(input) {
+  const value = input.value.trim();
+
+  if (!value) {
+    showError(input, "Wpisz treść wiadomości");
+    return false;
+  }
+
+  if (value.length < 10) {
+    showError(input, "Wiadomość powinna mieć minimum 10 znaków.");
+    return false;
+  }
+  if (value.length > 500) {
+    showError(input, "Wiadomość może mieć makrymalnie 500 znaków.");
+    return false;
+  }
+
+  clearError(input);
+  return true;
+}
