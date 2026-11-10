@@ -63,6 +63,18 @@ export function validatePhone(input) {
   return true;
 }
 
+export function validateEmail(input) {
+  const value = input.value.trim();
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (!emailPattern.test(value)) {
+    showError(input, "Wprowadź poprawny adres email");
+    return false;
+  }
+  clearError(input);
+  return true;
+}
+
 export function validateGuests(input) {
   const value = Number(input.value);
   if (!Number.isInteger(value) || value < 1 || value > 50) {
