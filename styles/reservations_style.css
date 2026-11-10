@@ -40,11 +40,17 @@ RESERVATION SECTION
   z-index: 10;
   position: relative;
   display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.reservation-container {
+  display: flex;
   min-height: 30svh;
   padding: 2rem 3rem;
-  width: 80%;
   align-items: stretch;
-  margin: 0 auto;
   justify-content: space-between;
   background-color: var(--green);
   border-radius: 15px;
@@ -99,7 +105,7 @@ FORM
   opacity: 0.75;
 }
 
-.form {
+.reservations-form {
   margin: 2rem 0;
   display: flex;
   flex-direction: column;
@@ -112,7 +118,7 @@ fieldset {
   border: none;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
   width: 100%;
   gap: 1.5rem;
 }
@@ -154,6 +160,16 @@ input {
   font-family: inherit;
 }
 
+input:user-invalid,
+textarea:user-invalid {
+  border: 5px solid var(--red);
+}
+
+input:user-valid,
+textarea:user-valid {
+  border: 5px solid var(--green);
+}
+
 textarea {
   width: 100%;
 }
@@ -171,6 +187,34 @@ main {
   overflow: hidden;
 }
 
+.error-message {
+  color: var(--yellow);
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-top: 0.3rem;
+  min-height: 1.1rem;
+}
+
+.success-message {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 1.5rem;
+  background-color: var(--yellow);
+  color: var(--green);
+  border-radius: 15px;
+  text-align: center;
+}
+
+.success-message h2 {
+  font-family: var(--header-font);
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.success-message p {
+  font-size: 1.1rem;
+}
+
 /*-----------------------------------------------
 MEDIA QUERIES
 ------------------------------------------------*/
@@ -183,7 +227,7 @@ MEDIA QUERIES
     width: 100%;
   }
 
-  .reservation-section {
+  .reservation-container {
     flex-direction: column;
     align-items: center;
   }
@@ -216,8 +260,12 @@ MEDIA QUERIES
   }
 
   .reservation-section {
-    padding: 2rem;
     width: 90%;
+  }
+
+  .reservation-container {
+    padding: 2rem;
+    width: 100%;
   }
 
   fieldset {
@@ -246,10 +294,6 @@ MEDIA QUERIES
     top: -30%;
   }
 
-  .reservation-section {
-    padding: 2rem 1rem;
-    width: 90%;
-  }
   fieldset {
     flex-direction: column;
   }
