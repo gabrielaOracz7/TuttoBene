@@ -172,6 +172,7 @@ textarea:user-valid {
 
 textarea {
   width: 100%;
+  font-size: clamp(1rem, 1.2vw, 1.1rem);
 }
 
 form .btn {

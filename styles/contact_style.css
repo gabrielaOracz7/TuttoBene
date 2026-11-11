@@ -155,6 +155,10 @@ select {
   cursor: pointer;
 }
 
+textarea {
+  font-size: clamp(1rem, 1.2vw, 1.1rem);
+}
+
 .contact-form .btn {
   background-color: var(--yellow);
   width: 100%;
